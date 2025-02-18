@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 from geometry_msgs.msg import Pose
-from ppc_waypoint_follower.srv import StartMission # Custom service
+from point_follower_interfaces.srv import StartMission # Custom service
 class MissionNode(Node):
     def __init__(self):
         super().__init__('mission_node')
